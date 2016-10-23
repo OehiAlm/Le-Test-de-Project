@@ -46,7 +46,7 @@ namespace LeichterTippen
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
-            StatsScreen = new GUI("Stats Background");
+            StatsScreen = new GUI("Stats_Background.png");
             StatsScreen.LoadContent(Content);
         }
 
