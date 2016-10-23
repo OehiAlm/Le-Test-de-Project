@@ -15,6 +15,8 @@ namespace LeichterTippen
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        GUI StatsScreen;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -44,6 +46,8 @@ namespace LeichterTippen
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+            StatsScreen = new GUI("Stats Background");
+            StatsScreen.LoadContent(Content);
         }
 
         /// <summary>
@@ -78,6 +82,9 @@ namespace LeichterTippen
             GraphicsDevice.Clear(Color.TransparentBlack);
 
             // TODO: Add your drawing code here
+            spriteBatch.Begin();
+            StatsScreen.Draw(spriteBatch);
+            spriteBatch.End();
             base.Draw(gameTime);
 
         }
