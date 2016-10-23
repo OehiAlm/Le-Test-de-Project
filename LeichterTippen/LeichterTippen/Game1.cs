@@ -4,6 +4,9 @@ using Microsoft.Xna.Framework.Input;
 
 namespace LeichterTippen
 {
+    // Hello World
+
+
     /// <summary>
     /// This is the main type for your game.
     /// </summary>
