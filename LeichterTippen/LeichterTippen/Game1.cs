@@ -4,11 +4,8 @@ using Microsoft.Xna.Framework.Input;
 
 namespace LeichterTippen
 {
-    // Hello World
-    //Hello Max
-    //awgzain
-//#agdsfhkloö
 
+//How shall we do this?
 
     /// <summary>
     /// This is the main type for your game.
@@ -69,7 +66,6 @@ namespace LeichterTippen
                 Exit();
 
             // TODO: Add your update logic here
-
             base.Update(gameTime);
         }
 
@@ -79,11 +75,11 @@ namespace LeichterTippen
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.TransparentBlack);
 
             // TODO: Add your drawing code here
-
             base.Draw(gameTime);
+
         }
     }
 }
